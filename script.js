@@ -39,38 +39,38 @@ window.addEventListener('resize', updateNav);
 document.addEventListener('DOMContentLoaded', updateNav);
 
 
-var arrLang = {
-    'kg': {
-        'about': 'Негизги',
-        'about Us': 'Биз жөнүндө',
-        'Our projects': 'Биздин долбоорлор',
-        'Team': 'Команда',
-        'Portfolio': 'Портфолио',
-        'Partners': 'Партнерлор',
-        'Помощь': 'Жардам',
-        'Подробнее': 'Кененирээк маалымат',
-        'Контакты': 'Байланыштар',
-    },
-    'ru': {
-        'Негизги': 'Главная',
-        'Биз жөнүндө': 'О нас',
-        'Биздин долбоорлор': 'Наши проекты',
-        'Команда': 'Команда',
-        'Портфолио': 'Портфолио',
-        'Партнерлор': 'Партнеры',
-        'Жардам': 'Помощь',
-        'Кененирээк маалымат': 'Подробнее',
-        'Байланыштар': 'Контакты',
-    }
+//Language//
+
+
+const select = document.querySelector('select');
+const allLang = ['kg', 'ru']
+
+select.addEventListener('change', changeURLLanguage);
+
+function changeURLLanguage() {
+    let lang = select.value;
+    location.href = window.location.pathname + '#' + lang;
+    location.reload();
 }
 
-$(function () {
-    $('.translate').click(function () {
-        var lang = $(this).attr('id');
+function changeLanguage() {
+    let hash = window.location.hash;
+    hash = hash.substr(1);
+    if (!allLang.includes(hash)) {
+        location.href = window.location.pathname + '#en';
+        location.reload();
+    }
+    select.value = hash;
+    document.querySelector('.about').innerHTML = langArr['unit'][hash];
+    document.querySelector('.aboutUs').innerHTML = langArr['chip'][hash];
+    document.querySelector('.Ourprojects').innerHTML = langArr['uu'][hash];
+    document.querySelector('.Team').innerHTML = langArr['nn'][hash];
+    document.querySelector('.Portfolio').innerHTML = langArr['ii'][hash];
+    document.querySelector('.Partners').innerHTML = langArr['tt'][hash];
+    document.querySelector('.Help').innerHTML = langArr['hh'][hash];
+    document.querySelector('.Moredetails').innerHTML = langArr['pp'][hash];
+    document.querySelector('.Contacts').innerHTML = langArr['jj'][hash];
 
+}
 
-        $('.lang').each(function (index, item) {
-            $(this).text(arrLang[lang][$(this).attr('key')]);
-        });
-    });
-});
+changeLanguage()
