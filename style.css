@@ -120,9 +120,61 @@ body {
 .nav .hidden {
     display: none;
 }
- 
+
 .translate {
     background: transparent;
     border: none;
     margin-left: 12px;
+    margin-top: 15px;
 }
+/* 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+
+<nav class="nav">
+    <ul class="visible-menu">
+        <li><a href="#" class="lang" key="about">Главная</a></li>
+        <li><a href="#" class="lang" key="about Us"> О нас</a></li>
+        <li class="header-item-lang-kg"><button id="en" class="translate"><img src="img/images.jpeg" alt="" width="40px" height="30px" margin-top="8px"></button></li>
+        <li class="header-item-lang-ru"><button id="en" class="translate"><img src="img/ru.jpeg" alt="" width="40px" height="30px"margin-top="8px"></button></li>
+        <li><a href="#" class="lang" key="Our projects">Наши проекты</a></li>
+        <li><a href="#" class="lang" key="Team">Команда</a></li>
+        <li><a href="#" class="lang" key="Portfolio">Портфолио</a></li>
+        <li><a href="#" class="lang" key="Partners">Партнеры</a></li>
+        <li><a href="#" class="lang" key="about">Помощь</a></li>
+        <li><a href="#" class="lang" key="about">Подробнее</a></li>
+        <li><a href="#" class="lang" key="about">Контакты</a></li>
+    </ul>
+    
+    <button class="burger hidden">
+        <svg width="30" height="40">
+            <circle cx="15" cy="10" r="2" fill="#fff" />
+            <circle cx="15" cy="20" r="2" fill="#fff" />
+            <circle cx="15" cy="30" r="2" fill="#fff" />
+        </svg>
+        <div class="burger-count"></div>
+    </button> 
+    <ul class="hidden-menu"></ul>
+</nav>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html> */
