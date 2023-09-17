@@ -59,7 +59,7 @@ function changeLanguage() {
     if (!allLang.includes(hash)) {
         location.href = window.location.pathname + '#en';
         location.reload();
-    }
+    };
     select.value = hash;
     document.querySelector('.about').innerHTML = langArr['unit'][hash];
     document.querySelector('.aboutUs').innerHTML = langArr['chip'][hash];
@@ -71,8 +71,8 @@ function changeLanguage() {
     document.querySelector('.Moredetails').innerHTML = langArr['pp'][hash];
     document.querySelector('.Contacts').innerHTML = langArr['jj'][hash];
 
-}
+};
 
-changeLanguage()
+changeLanguage();
 
 
