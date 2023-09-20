@@ -70,6 +70,7 @@ function changeLanguage() {
     document.querySelector('.Help').innerHTML = langArr['hh'][hash];
     document.querySelector('.Moredetails').innerHTML = langArr['pp'][hash];
     document.querySelector('.Contacts').innerHTML = langArr['jj'][hash];
+    document.querySelector('.typ').innerHTML = langArr['ug'][hash];
 
 };
 
