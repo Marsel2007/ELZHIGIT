@@ -127,6 +127,30 @@ body {
     margin-left: 12px;
     margin-top: 15px;
 }
+
+.img{
+    height: 60px;
+    width: 60px;
+}
+
+.back {
+    background-image: url(img/b11a1015.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: 100%;
+    
+}
+
+.home_content {
+    text-align: center;
+    padding-top: 90px;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
 /* 
 
 <!DOCTYPE html>
